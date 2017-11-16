@@ -1,0 +1,15 @@
+.panel-body .btn {
+    margin-top: 20px;
+}
+
+.col-sm-4 > h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid dimgrey;
+    margin-bottom: 10px;
+}
+.col-sm-4 > h3 > a {
+    text-decoration: none;
+}
+
+.col-sm-4 > h3 > a {
+
