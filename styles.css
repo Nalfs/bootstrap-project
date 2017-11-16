@@ -1,5 +1,9 @@
+
 .panel-body .btn {
     margin-top: 20px;
+}
+.subject-hero {
+    background-color: #2860902e;
 }
 
 .subject-header {
@@ -46,7 +50,7 @@
 }
 .overlay span {
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
