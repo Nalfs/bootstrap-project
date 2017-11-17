@@ -34,21 +34,73 @@
 				</li>
 			</ul>
 			<div class="tab-content">
-				<div role="tabpanel" class="tab-pane active" id="subject-info">...</div>
+				<div role="tabpanel" class="tab-pane active" id="subject-info">
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0">
+							<h3 class="subject-header">Get help with every math problem</h3>
+							<p>
+								We have math tutors in the following subjects:
+							</p>
+							<ul>
+								<li>Algebra I</li>
+								<li>Algebra II</li>
+								<li>Pre-Algebra</li>
+								<li>Geometry</li>
+								<li>Trigonometry</li>
+								<li>Pre-Calculus</li>
+								<li>Calculus</li>
+								<li>Statistics</li>
+								<li>Discrete Math</li>
+								<li>Middle Grades Math</li>
+							</ul>
+						</div>
+						<div class="col-sm-7">
+							<img src="images/math2.jpg" alt="" class="img-responsive">
+						</div>
+					</div>
+				</div>
 				<div role="tabpanel" class="tab-pane" id="tutor">
 					<div class="row">
-						<div class="col-sm-5">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-5">
 							<form action="" class="">
 								<div class="form-group">
+									<label for="choose-subject">Choose A Subject</label>
+									<select class="form-control">
+										<option selected value="math">Math</option>
+										<option value="sci">Science</option>
+										<option value="eng">English</option>
+										<option value="swe">Swedish</option>
+										<option value="music">Music</option>
+										<option value="pro">Programming</option>
+
+									</select>
+
+								</div>
+								<div class="form-group">
 									<label for="name">Name</label>
-									<input class="form-control" type="text" placeholder="name" id="name">
+									<input class="form-control" type="text" placeholder="Name" id="name">
+								</div>
+								<div class="form-group">
+									<label for="address">Address</label>
+									<input class="form-control" type="text" placeholder="Address" id="address">
+								</div>
+								<div class="form-group">
+									<label for="zip">Postal Code</label>
+									<input class="form-control" type="text" placeholder="Postal Code" id="zip">
+								</div>
+								<div class="form-group">
+									<label for="city">City</label>
+									<input class="form-control" type="text" placeholder="City" id="city">
 								</div>
 								<div class="form-group">
 									<label for="email-address">Email</label>
-									<input type="email" id="email-address" placeholder="email" class="form-control">
+									<input type="email" id="email-address" placeholder="Email Address" class="form-control">
 								</div>
 								<div class="form-group">
 									<label for="bookingdate">Date</label>
+									<span id="helpBlock" class="help-block">
+										Choose a date you'd like tutoring
+									</span>
 									<div class="input-group">
 										<input type="date" id="bookingdate" class="form-control">
 										<div class="input-group-addon">
@@ -58,9 +110,12 @@
 								</div>
 								<div class="form-group">
 									<label for="comments">Comments</label>
+									<span id="helpBlock" class="help-block">
+										If you have any questions or comments.
+									</span>
 									<textarea id="comments" rows="5" class="form-control"></textarea>
 								</div>
-								<input type="submit" value="BOOK NOW" class="btn-md btn-success ">
+								<input type="submit" value="BOOK NOW" class="btn btn-md ">
 							</form>
 						</div>
 					</div>
