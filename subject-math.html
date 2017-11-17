@@ -19,8 +19,8 @@
 			</ol>
 			<div class="row">
 				<div class="jumbotron subject-hero">
-					<h2 class="text-center text-capitalize">Want to ace your next math test?</h2>
-					<h3 class="text-center text-muted">We've got the right tutor for you</h3>
+					<!--<h2 class="text-center text-capitalize">Want to ace your next math test?</h2>
+					<h3 class="text-center text-muted">We've got the right tutor for you</h3>-->
 				</div>
 			</div>
 		</div>
@@ -29,15 +29,42 @@
 				<li role="presentation" class="active">
 					<a href="#subject-info" aria-controls="subject-info" role="tab" data-toggle="tab">Information</a>
 				</li>
-				<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-				<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-				<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+				<li role="presentation">
+					<a href="#tutor" aria-controls="tutor" role="tab" data-toggle="tab">Get a Tutor</a>
+				</li>
 			</ul>
 			<div class="tab-content">
-				<div role="tabpanel" class="tab-pane active" id="home">...</div>
-				<div role="tabpanel" class="tab-pane" id="profile">...</div>
-				<div role="tabpanel" class="tab-pane" id="messages">...</div>
-				<div role="tabpanel" class="tab-pane" id="settings">...</div>
+				<div role="tabpanel" class="tab-pane active" id="subject-info">...</div>
+				<div role="tabpanel" class="tab-pane" id="tutor">
+					<div class="row">
+						<div class="col-sm-5">
+							<form action="" class="">
+								<div class="form-group">
+									<label for="name">Name</label>
+									<input class="form-control" type="text" placeholder="name" id="name">
+								</div>
+								<div class="form-group">
+									<label for="email-address">Email</label>
+									<input type="email" id="email-address" placeholder="email" class="form-control">
+								</div>
+								<div class="form-group">
+									<label for="bookingdate">Date</label>
+									<div class="input-group">
+										<input type="date" id="bookingdate" class="form-control">
+										<div class="input-group-addon">
+											<span class="glyphicon glyphicon-th"></span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="comments">Comments</label>
+									<textarea id="comments" rows="5" class="form-control"></textarea>
+								</div>
+								<input type="submit" value="BOOK NOW" class="btn-md btn-success ">
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
