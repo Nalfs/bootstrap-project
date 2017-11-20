@@ -54,6 +54,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.rates {
+    border: 2px solid grey;
+    box-shadow: 0px 1px 4px;
+}
+.form-container {
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #2860902e;
+
+}
 form {
     margin: 20px 0;
     padding: 10px;
@@ -77,5 +87,11 @@ form textarea {
 @media screen and (min-width:768px) {
     .subject-img {
         height: 260px;
+    }
+    .flute-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
