@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<script src="jquery-3.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<style type="text/css">
+			body, html {
+				height: 100%;
+				margin: 0;
+				font: 400 15px/1.8 "Lato", sans-serif;
+				color: #777;
+			}
+			.science-bg {
+				background-image: url("images/science-bg.jpg");
+				min-height: 500px;
+				position: relative;
+				opacity: 0.65;
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+
+			}
+			.caption {
+				position: sticky;
+				left: 0;
+				top: 50%;
+				width: 100%;
+				text-align: center;
+				color: #000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="science-bg">
+			<div class="caption">
+				<span class="border" style="background-color:transparent;font-size:25px;">
+					BLOG
+				</span>
+			</div>
+		</div>
+		<div class="container">
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active">
+					<a href="#subject-info" aria-controls="subject-info" role="tab" data-toggle="tab">Information</a>
+				</li>
+				<li role="presentation">
+					<a href="#tutor" aria-controls="tutor" role="tab" data-toggle="tab">Get a Tutor</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="subject-info">
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0">
+							<h3 class="subject-header">Get help with every math problem</h3>
+							<p>
+								We have math tutors in the following subjects:
+							</p>
+							<ul>
+								<li>Algebra I</li>
+								<li>Algebra II</li>
+								<li>Pre-Algebra</li>
+								<li>Geometry</li>
+								<li>Trigonometry</li>
+								<li>Pre-Calculus</li>
+								<li>Calculus</li>
+								<li>Statistics</li>
+								<li>Discrete Math</li>
+								<li>Middle Grades Math</li>
+							</ul>
+							<div class="text-center">
+								<a href="#tutor" aria-controls="tutor" role="tab" data-toggle="tab" class="btn btn-special">Get a Tutor Now</a>
+							</div>
+						</div>
+						<div class="col-sm-7">
+							<img src="images/math2.jpg" alt="" class="img-responsive">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<h3 class="subject-header text-center">Rates</h3>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="tutor">
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-5">
+							<form action="" class="">
+								<div class="form-group">
+									<label for="choose-subject">Choose A Subject</label>
+									<select class="form-control" id="choose-subject">
+										<option selected value="math">Math</option>
+										<option value="sci">Science</option>
+										<option value="eng">English</option>
+										<option value="swe">Swedish</option>
+										<option value="music">Music</option>
+										<option value="pro">Programming</option>
+
+									</select>
+
+								</div>
+								<div class="form-group">
+									<label for="name">Name</label>
+									<input class="form-control" type="text" placeholder="Name" id="name">
+								</div>
+								<div class="form-group">
+									<label for="address">Address</label>
+									<input class="form-control" type="text" placeholder="Address" id="address">
+								</div>
+								<div class="form-group">
+									<label for="zip">Postal Code</label>
+									<input class="form-control" type="text" placeholder="Postal Code" id="zip">
+								</div>
+								<div class="form-group">
+									<label for="city">City</label>
+									<input class="form-control" type="text" placeholder="City" id="city">
+								</div>
+								<div class="form-group">
+									<label for="email-address">Email</label>
+									<input type="email" id="email-address" placeholder="Email Address" class="form-control">
+								</div>
+								<div class="form-group">
+									<label for="bookingdate">Date</label>
+									<span id="helpBlock1" class="help-block">
+										Choose a date you'd like tutoring
+									</span>
+									<div class="input-group">
+										<input type="date" id="bookingdate" class="form-control">
+										<div class="input-group-addon">
+											<span class="glyphicon glyphicon-th"></span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="comments">Comments</label>
+									<span id="helpBlock2" class="help-block">
+										If you have any questions or comments.
+									</span>
+									<textarea id="comments" rows="5" class="form-control"></textarea>
+								</div>
+								<input type="submit" value="BOOK NOW" class="btn btn-md ">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active">
+					<a href="#subject-info" aria-controls="subject-info" role="tab" data-toggle="tab">Information</a>
+				</li>
+				<li role="presentation">
+					<a href="#tutor" aria-controls="tutor" role="tab" data-toggle="tab">Get a Tutor</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="subject-info">
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0">
+							<h3 class="subject-header">Get help with every math problem</h3>
+							<p>
+								We have math tutors in the following subjects:
+							</p>
+							<ul>
+								<li>Algebra I</li>
+								<li>Algebra II</li>
+								<li>Pre-Algebra</li>
+								<li>Geometry</li>
+								<li>Trigonometry</li>
+								<li>Pre-Calculus</li>
+								<li>Calculus</li>
+								<li>Statistics</li>
+								<li>Discrete Math</li>
+								<li>Middle Grades Math</li>
+							</ul>
+							<div class="text-center">
+								<a href="#tutor" aria-controls="tutor" role="tab" data-toggle="tab" class="btn btn-special">Get a Tutor Now</a>
+							</div>
+						</div>
+						<div class="col-sm-7">
+							<img src="images/math2.jpg" alt="" class="img-responsive">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<h3 class="subject-header text-center">Rates</h3>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="tutor">
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-5">
+							<form action="" class="">
+								<div class="form-group">
+									<label for="choose-subject">Choose A Subject</label>
+									<select class="form-control" id="choose-subject">
+										<option selected value="math">Math</option>
+										<option value="sci">Science</option>
+										<option value="eng">English</option>
+										<option value="swe">Swedish</option>
+										<option value="music">Music</option>
+										<option value="pro">Programming</option>
+
+									</select>
+
+								</div>
+								<div class="form-group">
+									<label for="name">Name</label>
+									<input class="form-control" type="text" placeholder="Name" id="name">
+								</div>
+								<div class="form-group">
+									<label for="address">Address</label>
+									<input class="form-control" type="text" placeholder="Address" id="address">
+								</div>
+								<div class="form-group">
+									<label for="zip">Postal Code</label>
+									<input class="form-control" type="text" placeholder="Postal Code" id="zip">
+								</div>
+								<div class="form-group">
+									<label for="city">City</label>
+									<input class="form-control" type="text" placeholder="City" id="city">
+								</div>
+								<div class="form-group">
+									<label for="email-address">Email</label>
+									<input type="email" id="email-address" placeholder="Email Address" class="form-control">
+								</div>
+								<div class="form-group">
+									<label for="bookingdate">Date</label>
+									<span id="helpBlock1" class="help-block">
+										Choose a date you'd like tutoring
+									</span>
+									<div class="input-group">
+										<input type="date" id="bookingdate" class="form-control">
+										<div class="input-group-addon">
+											<span class="glyphicon glyphicon-th"></span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="comments">Comments</label>
+									<span id="helpBlock2" class="help-block">
+										If you have any questions or comments.
+									</span>
+									<textarea id="comments" rows="5" class="form-control"></textarea>
+								</div>
+								<input type="submit" value="BOOK NOW" class="btn btn-md ">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

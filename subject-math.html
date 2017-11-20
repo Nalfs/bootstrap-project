@@ -53,19 +53,111 @@
 								<li>Discrete Math</li>
 								<li>Middle Grades Math</li>
 							</ul>
+
 						</div>
-						<div class="col-sm-7">
-							<img src="images/math2.jpg" alt="" class="img-responsive">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-0 sub">
+							<img src="images/math2.jpg" alt="" class="img-responsive" style="margin-top: 20px;">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0">
+							<h3 class="subject-header">Rates</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+							<div class="panel rates">
+								<div class="panel-heading">
+									<h4 class="panel-title text-center">
+										Standard
+									</h4>
+								</div>
+								<div class="panel-body">
+									<ul>
+										<li>1 hour/month</li>
+										<li>24/7 access</li>
+										<li>Book appointments</li>
+										<li>Mobile acccess</li>
+										<li>Change/Cancel anytime</li>
+
+									</ul>
+									<div class="text-center" style="margin-top: 15px; font-size: 22px;">
+										<span class="bg-success">$19<sup>.99</sup></span>
+									</div>
+									<div class="text-center">
+										<a href="#tutor" aria-controls="tutor" role="tab" data-toggle="tab" class="btn btn-special">Get a Tutor Now</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+							<div class="panel rates">
+								<div class="panel-heading">
+									<h4 class="panel-title text-center">
+										Premium
+									</h4>
+								</div>
+								<div class="panel-body">
+									<ul>
+										<li>3 hours/month</li>
+										<li>24/7 access</li>
+										<li>Book appointments</li>
+										<li>Mobile acccess</li>
+										<li>Change/Cancel anytime</li>
+									</ul>
+									<div class="text-center" style="margin-top: 15px; font-size: 22px;">
+										<span class="bg-warning">$29<sup>.99</sup></span>
+									</div>
+									<div class="text-center">
+										<a href="#tutor" aria-controls="tutor" role="tab" data-toggle="tab" class="btn btn-special">Get a Tutor Now</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+							<div class="panel rates">
+								<div class="panel-heading">
+									<h4 class="panel-title text-center">
+										Plugghäst
+									</h4>
+								</div>
+								<div class="panel-body">
+									<ul>
+										<li>10 hours/month</li>
+										<li>24/7 access</li>
+										<li>Book appointments</li>
+										<li>Mobile acccess</li>
+										<li>Change/Cancel anytime</li>
+									</ul>
+									<div class="text-center" style="margin-top: 15px; font-size: 22px;">
+										<span class="bg-danger">$69<sup>.99</sup></span>
+									</div>
+									<div class="text-center">
+										<a href="#tutor" aria-controls="tutor" role="tab" data-toggle="tab" class="btn btn-special">Get a Tutor Now</a>
+									</div>
+								</div>
+							</div>
+
 						</div>
 					</div>
 				</div>
 				<div role="tabpanel" class="tab-pane" id="tutor">
 					<div class="row">
-						<div class="col-xs-10 col-xs-offset-1 col-sm-5">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-5 form-container">
 							<form action="" class="">
 								<div class="form-group">
+									<label for="choose-plan">Choose A Plan</label>
+									<select class="form-control" id="choose-plan">
+										<option value="standard">Standard</option>
+										<option value="pre">Premium</option>
+										<option selected value="plugg">Plugghäst</option>
+									</select>
+								</div>
+								<div class="form-group">
 									<label for="choose-subject">Choose A Subject</label>
-									<select class="form-control">
+									<select class="form-control" id="choose-subject">
 										<option selected value="math">Math</option>
 										<option value="sci">Science</option>
 										<option value="eng">English</option>
@@ -74,7 +166,6 @@
 										<option value="pro">Programming</option>
 
 									</select>
-
 								</div>
 								<div class="form-group">
 									<label for="name">Name</label>
@@ -98,7 +189,7 @@
 								</div>
 								<div class="form-group">
 									<label for="bookingdate">Date</label>
-									<span id="helpBlock" class="help-block">
+									<span id="helpBlock1" class="help-block">
 										Choose a date you'd like tutoring
 									</span>
 									<div class="input-group">
@@ -110,7 +201,7 @@
 								</div>
 								<div class="form-group">
 									<label for="comments">Comments</label>
-									<span id="helpBlock" class="help-block">
+									<span id="helpBlock2" class="help-block">
 										If you have any questions or comments.
 									</span>
 									<textarea id="comments" rows="5" class="form-control"></textarea>
