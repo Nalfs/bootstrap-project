@@ -76,6 +76,7 @@ form input[type="submit"], .btn-special {
     background-color: #337ab7bd;
     letter-spacing: 0.2em;
     color: #434343;
+    border: 1px solid black;
 }
 form input[type="submit"]:hover, .btn-special:hover {
     background-color: #337ab7fa;
