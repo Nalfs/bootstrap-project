@@ -22,7 +22,69 @@
     <title>Title</title>
 
     <style>
-        /*Contact sectiom*/
+
+        .breadcrumb {
+            margin-top: 20px;
+        }
+
+        /*Navbar*/
+
+
+        .move {
+            margin-top: 40px;
+        }
+
+        #large {
+            font-size: 35px;
+        }
+
+        .top {
+            width: 100%;
+
+            min-height: 200px;
+            max-height: 800px;
+            background-color: #3278B3;
+            color: #ffffff;
+        }
+
+        .navcol {
+            color: #ffffff;
+        }
+
+        .navbar-nav li a {
+            vertical-align: middle;
+            line-height: 60px;
+        }
+
+        .input-search {
+            height: 60px;
+            font-size: 30px;
+            line-height: 20px;
+        }
+
+        .navbar-toggle  {
+
+            background: #73a7cc;
+        }
+
+
+        .icon-bar {
+            background-color: black;
+        }
+
+        .caret {
+            color: #ffffff;
+        }
+        .dropdown-menu {
+            color: #ffffff;
+
+        }
+
+        li.dropdown {
+            color: white;
+        }
+
+        /*Contact section*/
         .content-header{
             font-family: 'Oleo Script', cursive;
             color:#fcc500;
@@ -38,8 +100,7 @@
             font-family: 'Teko', sans-serif;
             padding-top: 60px;
             width: 100%;
-            margin: 0 auto;
-         /*   width: 100vw; */
+            width: 100vw;
             height: 550px;
             background: #3a6186; /* fallback for old browsers */
             background: -webkit-linear-gradient(to left, #3a6186 , #d9edf7); /* Chrome 10-25, Safari 5.1-6 */
@@ -53,13 +114,10 @@
         .contact-section .col-md-6{
             width: 50%;
         }
-        form {
+      form {
             padding: 10px;
         }
 
-        .form-line{
-            border-right: 1px solid #B29999;
-        }
 
         .form-group{
             margin-top: 10px;
@@ -167,12 +225,19 @@
             transition: all 0.8s;
         }
 
-        a {
+        .abackground {
             background-color: #D3D3D3;
         }
 
+        input::-webkit-input-placeholder {
+            color: black !important;
+        }
+        textarea::-webkit-input-placeholder {
+            color: black !important;
+        }
+
         #social {
-            margin-top: 40px;
+            margin-top: 20px;
         }
 
         @media screen and (max-width: 768px) {
@@ -182,13 +247,24 @@
                 color: black;
             }
 
-            #social > .container {
-                margin-top: 240px;
-            }
+
             .contact-section .col-md-6 {
                 width: 100%;
             }
+
+            footer {
+                margin-top: 280px;
+            }
+
+            #large {
+                font-size: 25px;
+            }
+            .searchmini {
+                margin-top: 20px;
+            }
+
         }
+
 
 
     </style>
@@ -196,16 +272,73 @@
 </head>
 <body>
 
+<header>
+    <div class="container top">
+        <div class="container">
+
+            <nav class="navbar navbar-primary">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed"
+                            data-toggle="collapse"
+                            data-target="#navbar-collapse-container"
+                            aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <div class="navbar-brand">
+                        <h2 id="large"><span class="glyphicon glyphicon-education"></span> KAN - education</h2>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse-container">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html" class="navcol">
+                            Home </a>
+                        </li>
+                        <li><a class="dropdown-toggle dropdown navcol" data-toggle="dropdown" href="services.html">Services <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="services.html" class="navcol">Services</a></li>
+                                <hr />
+                                <li><a href="subject-math.html" class="navcol">Math</a></li>
+                                <li><a href="subject-music.html" class="navcol">Music</a></li>
+                                <li><a href="subject-english.html" class="navcol">English</a></li>
+                                <li><a href="subject-science.html" class="navcol">Science</a></li>
+                                <li><a href="subject-swedish.html" class="navcol">Swedish</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html" class="navcol">About</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="contact.html" class="navcol">Contact <span class="sr-only">(current)</span></a></li>
+                        <li><a href="gallery.html" class="navcol">Gallery</a></li>
+                        <li><a href="blog.html" class="navcol">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="input-group searchmini">
+                    <input type="text" id="bookingdate" class="form-control search-query input-search" placeholder="Search">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    </div>
+
+</header>
+
+
 <div class="container">
     <ol class="breadcrumb">
     <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-    <li class="active">About</li>
+    <li class="active">Contact</li>
     </ol>
 
     <div class="jumbotron subject-hero">
         <h2 class="text-capitalize">Contacts page</h2>
-        <h3 class="text-muted">Feel free to get in touch with us by filling out our forms
-            or visit us on social networks</h3>
+        <h3 class="text-muted">We strife for excellens and your opinion is important to us.</h3>
     </div>
 </div>
 
@@ -213,7 +346,7 @@
 <section id="contact">
     <div class="section-content">
         <h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
-        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
+        <h3>Feel free to get in touch with us by filling out our forms or visit us on social networks</h3>
     </div>
     <div class="contact-section">
         <div class="container">
@@ -257,25 +390,74 @@
                         <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
                     </div>
 
+                    <section id="social">
+                        <div class="container">
+
+                                <ul class="social-network social-circle">
+                                    <li><a href="#" class="icoRss abackground" title="Rss"><i class="fa fa-rss"></i></a></li>
+                                    <li><a href="#" class="icoFacebook abackground" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" class="icoTwitter abackground" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" class="icoGoogle abackground" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#" class="icoLinkedin abackground" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+
+                        </div>
+                    </section>
+
                 </div>
             </form>
         </div>
     </div>
 </section>
 
-<section id="social">
-    <div class="container">
-        <div class="col-xs-12 col-md-6 col-md-offset-3">
-            <ul class="social-network social-circle">
-                <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
+
+
+<footer class="container text-center">
+    <hr />
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#">Product for Mac</a></li>
+                    <li><a href="#">Product for Windows</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#">Web analytics</a></li>
+                    <li><a href="#">Presentations</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#">Product Help</a></li>
+                    <li><a href="#">Developer API</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-</section>
+    <hr>
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="span8">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy</a>
+                <a href="#">Security</a>
+            </div>
+            <div class="span4">
+                <p class="muted pull-right">© 2017 KAN - education. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+</footer>
 
 </body>
 </html>
