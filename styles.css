@@ -1,4 +1,6 @@
-
+.breadcrumb {
+    margin-top: 20px;
+}
 .panel-body .btn {
     margin-top: 20px;
 }
@@ -86,6 +88,9 @@ form textarea {
 }
 
 @media screen and (min-width:768px) {
+    .navbar {
+        margin-bottom: 0;
+    }
     .subject-img {
         height: 260px;
     }
@@ -94,6 +99,10 @@ form textarea {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    .searchmini {
+        width: 50%;
+        margin: 5px auto;
     }
 }
 
@@ -122,7 +131,7 @@ form textarea {
 .top {
     width: 100%;
 
-    min-height: 200px;
+    min-height: 150px;
     max-height: 800px;
     background-color: #3278B3;
     color: #ffffff;
@@ -141,8 +150,8 @@ form textarea {
 }
 
 .input-search {
-    height: 60px;
-    font-size: 30px;
+    height: 40px;
+    font-size: 20px;
     line-height: 20px;
 }
 
@@ -184,7 +193,9 @@ li.dropdown {
 }
 
 @media screen and (max-width: 768px) {
-
+    .navbar-collapse {
+        margin-top: 10px;
+    }
     #large {
         font-size: 25px;
     }
