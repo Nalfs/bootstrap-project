@@ -304,7 +304,14 @@
 
                             </ul>
                         </li>
-                        <li><a href="about.html" class="navcol">About</a></li>
+                        <li><a href="about.html" class="dropdown-toggle dropdown navcol" data-toggle="dropdown">About <span class="caret"></span></a> <!-- about dropdwn -->
+                            <ul class="dropdown-menu">
+                                <li><a href="about.html" class="navcol">About us</a></li>
+                                <hr />
+                                <li><a href="abouthbg.html" class="navcol">Helsingborg</a></li>
+                                <li><a href="aboutlund.html" class="navcol">Lund</a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="contact.html" class="navcol">Contact <span class="sr-only">(current)</span></a></li>
@@ -313,7 +320,7 @@
                     </ul>
                 </div>
                 <div class="input-group searchmini">
-                    <input type="text" id="bookingdate" class="form-control search-query input-search" placeholder="Search">
+                    <input type="text"  class="form-control search-query input-search" placeholder="Search">
                     <div class="input-group-addon">
                         <span class="glyphicon glyphicon-search"></span>
                     </div>
@@ -348,8 +355,8 @@
             <form>
                 <div class="col-xs-12 col-md-6">
                     <div class="form-group">
-                        <label for="exampleInputUsername">Your name</label>
-                        <input type="text" class="form-control" id="" placeholder=" Enter Name">
+                        <label for="Username">Your name</label>
+                        <input type="text" class="form-control" id="Username" placeholder=" Enter Name">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail">Email Address</label>
