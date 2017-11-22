@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta name="author" content="Nadim Al-Sharif">
+		<meta name="description" content="Bootstrap exam - contact page">
+		<meta name="keywords" content="bootstrap, jumbotron, panel, navbar, contact, form ">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<script src="jquery-3.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="styles.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<title>Contact page</title>
+
+		<style>
+
+			.breadcrumb {
+				margin-top: 20px;
+			}
+
+			/* !*Navbar*!
+
+
+			 .move {
+				 margin-top: 40px;
+			 }
+
+			 #large {
+				 font-size: 35px;
+			 }
+
+			 .top {
+				 width: 100%;
+
+				 min-height: 200px;
+				 max-height: 800px;
+				 background-color: #3278B3;
+				 color: #ffffff;
+			 }
+
+			 .navcol {
+				 color: #ffffff;
+			 }
+
+			 .navbar-nav li a {
+				 vertical-align: middle;
+				 line-height: 60px;
+			 }
+
+			 .input-search {
+				 height: 60px;
+				 font-size: 30px;
+				 line-height: 20px;
+			 }
+
+			 .navbar-toggle  {
+
+				 background: #73a7cc;
+			 }
+
+
+			 .icon-bar {
+				 background-color: black;
+			 }
+
+			 .caret {
+				 color: #ffffff;
+			 }
+			 .dropdown-menu {
+				 color: #ffffff;
+
+			 }
+
+			 li.dropdown {
+				 color: white;
+			 }
+	 */
+			/*Contact section*/
+			.content-header{
+				font-family: 'Oleo Script', cursive;
+				color:#fcc500;
+				font-size: 45px;
+			}
+
+			.section-content{
+				text-align: center;
+
+			}
+			#contact{
+
+				font-family: Century, sans-serif;
+				padding-top: 60px;
+				width: 100%;
+				height: 550px;
+				background: #3a6186; /* fallback for old browsers */
+				background: -webkit-linear-gradient(to left, #3a6186 , #d9edf7); /* Chrome 10-25, Safari 5.1-6 */
+				background: linear-gradient(to left, #3a6186 , #d9edf7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+				color : #fff;
+				border-radius: 6px;
+			}
+			.contact-section{
+				padding-top: 20px;
+			}
+			.contact-section .col-md-6{
+				width: 50%;
+			}
+			form {
+				padding: 10px;
+			}
+
+
+			.form-group{
+				margin-top: 10px;
+			}
+			label{
+				font-size: 1.3em;
+				line-height: 1em;
+				font-weight: normal;
+			}
+			.form-control{
+				font-size: 1.3em;
+				color: #080808;
+			}
+			textarea.form-control {
+				height: 135px;
+				/* margin-top: px;*/
+			}
+
+			.submit{
+				font-size: 1.1em;
+				float: right;
+				width: 150px;
+				background-color: transparent;
+				color: #fff;
+
+			}
+
+			/*=========================
+	  Icons
+	 ================= */
+
+			/* footer social icons */
+			ul.social-network {
+				list-style: none;
+				display: inline;
+				margin-left:0 !important;
+				padding: 0;
+			}
+			ul.social-network li {
+				display: inline;
+				margin: 0 5px;
+			}
+
+
+			/* footer social icons */
+			.social-network a.icoRss:hover {
+				background-color: #33ccff;
+			}
+			.social-network a.icoFacebook:hover {
+				background-color:#F56505;
+			}
+			.social-network a.icoTwitter:hover {
+				background-color:#33ccff;
+			}
+			.social-network a.icoGoogle:hover {
+				background-color:#F56505;
+			}
+
+			.social-network a.icoLinkedin:hover {
+				background-color:#33ccff;
+			}
+			.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+			.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+				color:#fff;
+			}
+			a.socialIcon:hover, .socialHoverClass {
+				color:#44BCDD;
+			}
+
+			.social-circle li a {
+				display:inline-block;
+				position:relative;
+				margin:0 auto 0 auto;
+				-moz-border-radius:50%;
+				-webkit-border-radius:50%;
+				border-radius:50%;
+				text-align:center;
+				width: 50px;
+				height: 50px;
+				font-size:20px;
+			}
+			.social-circle li i {
+				margin:0;
+				line-height:50px;
+				text-align: center;
+			}
+
+			.social-circle li a:hover i, .triggeredHover {
+				-moz-transform: rotate(360deg);
+				-webkit-transform: rotate(360deg);
+				-ms--transform: rotate(360deg);
+				transform: rotate(360deg);
+				-webkit-transition: all 0.2s;
+				-moz-transition: all 0.2s;
+				-o-transition: all 0.2s;
+				-ms-transition: all 0.2s;
+				transition: all 0.2s;
+			}
+			.social-circle i {
+				color: #fff;
+				-webkit-transition: all 0.8s;
+				-moz-transition: all 0.8s;
+				-o-transition: all 0.8s;
+				-ms-transition: all 0.8s;
+				transition: all 0.8s;
+			}
+
+			.abackground {
+				background-color: #D3D3D3;
+			}
+
+			input::-webkit-datetime-edit{ color: #999999; }
+			input:focus::-webkit-datetime-edit{ color: #000; }
+
+			#social {
+				margin-top: 20px;
+			}
+
+			@media screen and (max-width: 768px) {
+
+				#contact {
+					background: none;
+					color: black;
+				}
+
+
+				.contact-section .col-md-6 {
+					width: 100%;
+				}
+
+				footer {
+					margin-top: 280px;
+				}
+
+				#large {
+					font-size: 25px;
+				}
+				.searchmini {
+					margin-top: 20px;
+				}
+
+			}
+
+
+
+		</style>
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container top">
+				<div class="container">
+
+					<nav class="navbar navbar-primary">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed"
+									data-toggle="collapse"
+									data-target="#navbar-collapse-container"
+									aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<div class="navbar-brand">
+								<h2 id="large"><span class="glyphicon glyphicon-education"></span> KAN - education</h2>
+							</div>
+						</div>
+						<div class="collapse navbar-collapse" id="navbar-collapse-container">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html" class="navcol">
+									Home </a>
+								</li>
+								<li><a class="dropdown-toggle dropdown navcol" data-toggle="dropdown" href="services.html">Services <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="services.html" class="navcol">All subjects</a></li>
+										<hr />
+										<li><a href="subject-math.html" class="navcol">Math</a></li>
+										<li><a href="subject-music.html" class="navcol">Music</a></li>
+										<li><a href="subject-english.html" class="navcol">English</a></li>
+										<li><a href="subject-science.html" class="navcol">Science</a></li>
+										<li><a href="subject-swedish.html" class="navcol">Swedish</a></li>
+										<li><a href="subject-programming.html" class="navcol">Programming</a></li>
+
+									</ul>
+								</li>
+								<li><a href="about.html" class="dropdown-toggle dropdown navcol" data-toggle="dropdown">About <span class="caret"></span></a> <!-- about dropdwn -->
+									<ul class="dropdown-menu">
+										<li><a href="about.html" class="navcol">About us</a></li>
+										<hr />
+										<li><a href="abouthbg.html" class="navcol">Helsingborg</a></li>
+										<li><a href="aboutlund.html" class="navcol">Lund</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li class="active"><a href="contact.html" class="navcol">Contact <span class="sr-only">(current)</span></a></li>
+								<li><a href="gallery.html" class="navcol">Gallery</a></li>
+								<li><a href="blog.html" class="navcol">Blog</a></li>
+							</ul>
+						</div>
+						<div class="input-group searchmini">
+							<input type="text"  class="form-control search-query input-search" placeholder="Search">
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-search"></span>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+
+		</header>
+
+
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li class="active">Contact</li>
+			</ol>
+
+			<div class="jumbotron subject-hero text-center">
+				<h2 class="text-capitalize">Contacts page</h2>
+				<h3 class="text-muted">We strife for excellens and your opinion is important to us.</h3>
+			</div>
+		</div>
+
+
+		<section id="contact">
+			<div class="section-content">
+				<h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
+				<h3>Feel free to get in touch with us by filling out our forms or visit us on social networks</h3>
+			</div>
+			<div class="contact-section">
+				<div class="container">
+					<form>
+						<div class="col-xs-12 col-md-6">
+							<div class="form-group">
+								<label for="Username">Your name</label>
+								<input type="text" class="form-control" id="Username" placeholder=" Enter Name">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail">Email Address</label>
+								<div class="input-group">
+									<input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+									<div class="input-group-addon">
+										@
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="telephone">Mobile No.</label>
+								<input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
+							</div>
+
+							<div class="form-group">
+								<label for="bookingdate">Date</label>
+								<div class="input-group">
+									<input type="date" id="bookingdate" class="form-control">
+									<div class="input-group-addon">
+										<span class="glyphicon glyphicon-th"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for ="description"> Message</label>
+								<textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+							</div>
+							<div>
+
+								<button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+							</div>
+
+							<section id="social">
+
+								<ul class="social-network social-circle">
+									<li><a href="#" class="icoRss abackground" title="Rss"><i class="fa fa-rss"></i></a></li>
+									<li><a href="#" class="icoFacebook abackground" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" class="icoTwitter abackground" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#" class="icoGoogle abackground" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="#" class="icoLinkedin abackground" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
+
+
+							</section>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+
+
+		<footer class="container text-center">
+			<hr />
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="col-md-3">
+						<ul class="nav nav-pills nav-stacked">
+							<li><a href="about.html">About us</a></li>
+							<li><a href="blog.html">Blog</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="nav nav-pills nav-stacked">
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="#">Internship</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="nav nav-pills nav-stacked">
+							<li><a href="#">Our content specialists</a></li>
+							<li><a href="#">Our leadership</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="nav nav-pills nav-stacked">
+							<li><a href="#">Arts & humanities</a></li>
+							<li><a href="#">Science & engineering</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="span8">
+						<a href="#">Terms of Service</a>
+						<a href="#">Privacy</a>
+						<a href="#">Security</a>
+					</div>
+					<div class="span4">
+						<p class="muted pull-right">© 2017 KAN - education. All rights reserved</p>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+
+	</body>
+</html>
